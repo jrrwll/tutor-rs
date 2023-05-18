@@ -1,0 +1,9 @@
+[workspace]
+members = [
+    'book2021',
+    'marco/simple',
+    'marco/proc',
+    'marco/proc_demo',
+    'ext',
+    'toy',
+]

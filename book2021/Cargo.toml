@@ -1,0 +1,10 @@
+[package]
+# see https://doc.rust-lang.org/book/
+# and https://kaisery.github.io/trpl-zh-cn/
+name = "book2021"
+version = "0.1.0"
+authors = ["tuke <jrriwll@gmail.com>"]
+edition = "2021"
+
+[dependencies]
+rand = "0.8.3"

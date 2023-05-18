@@ -1,0 +1,8 @@
+[package]
+name = "test_macro_proc_demo"
+version = "0.1.0"
+authors = ["tuke <jrriwll@gmail.com>"]
+edition = "2021"
+
+[dependencies]
+test_macro_proc = { path = "../proc", version = "0.1.0"}
