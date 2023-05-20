@@ -1,7 +1,7 @@
 #[cfg(test)]
 mod alpha_numeric;
 #[cfg(test)]
-mod code;
+pub(crate) mod code;
 #[cfg(test)]
 mod numeric;
 

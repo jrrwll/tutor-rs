@@ -1,4 +1,4 @@
-extern crate ca;
+extern crate toy;
 
 #[cfg(test)]
 mod qrcode;

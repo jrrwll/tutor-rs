@@ -1,6 +1,6 @@
-use ca::qrcode::QrCode;
+use toy::qrcode::QrCode;
 
-fn parse_bin(v: Vec<char>) -> u8 {
+pub(crate) fn parse_bin(v: Vec<char>) -> u8 {
     let bin: String = v.into_iter().collect();
     println!("parse binary number from {}", &bin);
     match u8::from_str_radix(&bin, 2) {
@@ -23,7 +23,7 @@ fn encode_nums() {
     // 01100001  97
     // 1         1
     let qr = QrCode::from_version(1);
-    match qr.encode_nums("01234567") {
+    match qr.encode_numeric("01234567") {
         Ok(v) => {
             let s: String = "0001 0000001000 0000001100 0101011001 1000011"
                 .chars()

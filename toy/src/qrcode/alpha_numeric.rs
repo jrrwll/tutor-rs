@@ -1,7 +1,7 @@
 use std::collections::HashMap;
-use std::lazy::SyncLazy;
+use std::sync::LazyLock;
 
-static MAPPING: SyncLazy<HashMap<u8, u8>> = SyncLazy::new(|| {
+static MAPPING: LazyLock<HashMap<u8, u8>> = LazyLock::new(|| {
     let mut m: HashMap<u8, u8> = HashMap::new();
     let cs = "0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ $%*+-./:";
     let mut i = 0;

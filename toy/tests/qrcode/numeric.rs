@@ -1,5 +1,5 @@
-use crate::qrcode::parse_bin;
-use ca::qrcode::QrCode;
+use super::code::parse_bin;
+use toy::qrcode::QrCode;
 
 #[test]
 fn test_encode_numeric() {
