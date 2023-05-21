@@ -4,6 +4,7 @@ use syn::{Fields, Ident, Type};
 pub use builder::*;
 
 mod builder;
+mod type_arg_parser;
 
 
 pub(crate) fn map_fields<F>(fields: &Fields, mapper: F) -> TokenStream
